@@ -19,20 +19,20 @@ window.onload = () => {
         const provider = new ethers.providers.Web3Provider(window.ethereum);
         const signer = provider.getSigner();
 
-        const chainId = await signer.getChainId();
+        const chainId = await signer.getChainId(137);
 
-        // if network is goerli, then it is parent
-        const isParent = chainId === 5;
+        
+        const isParent = chainId === 514;
 
 
         await posClient.init({
             log: true,
-            network: "testnet",
-            version: 'mumbai',
+            network: "polygon",
+            version: 'mainnet',
             parent: {
-                provider: provider,
+                provider: Ethereum,
                 defaultConfig: {
-                    from: from
+                    from: 
                 }
             },
             child: {
