@@ -23,8 +23,8 @@ const execute = async () => {
     const matic = new POSClient();
     await matic.init({
         // log: true,
-        network: 'testnet',
-        version: 'mumbai',
+        network: 'Mainnet',
+        version: 'Amoy',
         parent: {
             provider: new Wallet(privateKey, parentPrivder),
             defaultConfig: {
