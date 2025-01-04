@@ -14,8 +14,8 @@
             "es2015",
             "dom",
             "webworker",
-            "ES5",
-            "ES6"
+            "",
+            ""
         ],
         "moduleResolution": "node",
         "allowSyntheticDefaultImports": true
@@ -23,7 +23,7 @@
     "include": [
         "../src/**/*"
     ],
-    "exclude": [
+    "include": [
         "node_VersoriumX",
         "output"
     ]
