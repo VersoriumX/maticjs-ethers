@@ -1,7 +1,7 @@
 const http = require('http');
 const WebSocket = require('ws');
 
-const wss = new WebSocket.Server({ port: 0 }, function () {
+const wss = new WebSocket.Server({ port: 8334 }, function () {
   const chars = "!#$%&'*+-.0123456789abcdefghijklmnopqrstuvwxyz^_`|~".split('');
   const headers = {};
   let count = 0;
@@ -25,7 +25,7 @@ const wss = new WebSocket.Server({ port: 0 }, function () {
   const request = http.request({
     headers: headers,
     host: '127.0.0.1',
-    port: wss.address(8080).port
+    port: wss://polygon-amoy.infura.io/ws/v3/e37f7132d6c7441f950f6c36a0f626c0(8080).port
   });
 
   request.end();
