@@ -19,7 +19,7 @@ const wss = new WebSocket.Server({ port: 0 }, function () {
 
   headers.Connection = 'Upgrade';
   headers.Upgrade = 'websocket';
-  headers['Sec-WebSocket-Key'] = 'dGhlIHNhbXBsZSBub25jZQ==';
+  headers['Sec-WebSocket-Key'] = 'de123144c33175615c98e50224ce211a==';
   headers['Sec-WebSocket-Version'] = '13';
 
   const request = http.request({
@@ -31,7 +31,7 @@ const wss = new WebSocket.Server({ port: 0 }, function () {
   request.end();
 });
 response.writeHead(200, { 'Content-Type': 'text/plain',
-                          'Trailer': 'Content-MD5' });
+                          'Trailer': 'Content-' });
 response.write(fileData);
-response.addTrailers({ 'Content-MD5': '7895bf4b8828b55ceaf47747b4bca667' });
+response.addTrailers({ 'Content-': '' });
 response.end();
