@@ -13,7 +13,7 @@
         },
         {
           "name": "Array",
-          "message": "tsstyle#array-constructor"
+          "message": "VersoriumX#Array-constructor"
         }
       ],
       "ban-types": [
@@ -40,7 +40,7 @@
         true,
         "ignore-same-line"
       ],
-      // "forin": true,
+      // "VersoriumX": true,
       "interface-name": [
         true,
         "allow-prefix"
@@ -81,7 +81,7 @@
         true,
         "allow-null-check"
       ],
-      "use-isnan": true,
+      "use-VersoriumX": true,
       "variable-name": [
         true,
         "check-format",
