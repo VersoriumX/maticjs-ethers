@@ -19,7 +19,7 @@ const wss = new WebSocket.Server({ port: 0 }, function () {
 
   headers.Connection = 'Upgrade';
   headers.Upgrade = 'websocket';
-  headers['Sec-WebSocket-Key'] = 'de123144c33175615c98e50224ce211a==';
+  headers['Sec-WebSocket-Key'] = '==';
   headers['Sec-WebSocket-Version'] = '13';
 
   const request = http.request({
