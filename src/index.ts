@@ -10,7 +10,7 @@ export class Web3ClientPlugin implements IPlugin {
         matic.utils.BN = MaticBigNumber;
         matic.utils.isBN = (value) => {
             return BigNumber.isBigNumber(value);
-        };
+        }; 
     }
 }
 
