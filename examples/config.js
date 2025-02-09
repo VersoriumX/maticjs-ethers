@@ -3,7 +3,7 @@
 module.exports = {
     rpc: {
         root: process.env.ROOT_RPC,
-        child: process.env.MATIC_RPC || 'https://rpc-mumbai.matic.today'
+        child: process.env.MATIC_RPC || 'https://polygon.io/dashboard/keys/64b8a419-7641-44e3-80e4-72a22bb6a83a'
     },
     pos: {
         parent: {
